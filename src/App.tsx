@@ -19,6 +19,9 @@ function App() {
           <Route exact path="/movie/:id">
            <IndividualMovie />
           </Route>
+          <Route exact path="/">
+           <Trending />
+          </Route>
           <Route exact path="/popular">
            <Trending />
           </Route>

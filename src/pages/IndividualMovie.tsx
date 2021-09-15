@@ -30,7 +30,7 @@ const IndividualMovie = () => {
 
             </div>
             <div className="info">
-                <div className="title">
+                <div className="title2">
                     <h1>{movie.title}</h1>
                     <div className="rating">
                         <StarOutlineSharpIcon />

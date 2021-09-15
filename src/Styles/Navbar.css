@@ -1,52 +1,74 @@
 .navbar {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
   margin: 0px;
   padding: 0px;
-  margin-bottom: 100px;
+  width: 100%;
+  margin-bottom: 90px;
 }
 
-.navbar .title {
-  margin-left: 120px;
+
+.title h1 {
+margin-top: 20px;
+margin-left: 120px;
 }
 
-.navbar .navlinks {
-  height: 100%;
-}
-
-.navbar .navlinks ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.navlinks ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
   list-style: none;
-  height: 100%;
   font-size: 20px;
 }
 
-.navbar .navlinks ul li {
-  background-color: #222121;
-}
 
-.navbar .navlinks ul li .link {
-  padding: 29px 20px;
+.link {
+  padding:20px;
   text-decoration: none;
   color: white;
 }
 
-.navbar .navlinks ul li .link:hover {
+.link:hover {
+  color: white;
   background-color: #377937;
 }
 
-.navbar .navlinks ul li .activelink {
+.activelink {
+  color: white;
   background-color: #3a913a;
 }
+
+@media (max-width:800px) {
+  .navbar{
+    align-items: center;
+  }
+  .title{
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    
+  }
+  .title h1{
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+  .navlinks{
+    width: 100%;
+  }
+  .navlinks ul{
+    width: 100%;
+    display: flex;
+    font-size: 10px;
+  }
+  .navlinks li {
+    text-align: center;
+  }
+  .link{
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
 /*# sourceMappingURL=Navbar.css.map */

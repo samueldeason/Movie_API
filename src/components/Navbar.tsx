@@ -19,7 +19,7 @@ const Navbar = () => {
                     <li>
                         <NavLink exact to="/toprated"
                         className="link" activeClassName="activelink">
-                        Top Rated
+                        Top-Rated
                         </NavLink>
                     </li>
                     <li>
