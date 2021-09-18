@@ -1,14 +1,13 @@
 .moviepage {
   display: flex;
   color: white;
-  background-color: #1b1919;
-  padding: 100px;
-  border-radius: 50px;
-  margin-top: -40px;
+  background-color: #302f2f;
+  margin-top: -30px;
+  height: 100vh;
 }
 
 .backdrop {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
   margin-right: 50px;
   border: 3px solid white;
@@ -41,7 +40,7 @@
     flex-direction: column;
   }
   .backdrop{
-    margin-top: 0px;
+    margin-top: 30px;
     width: 200px;
     height: 300px;
   }

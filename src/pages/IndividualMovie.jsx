@@ -2,10 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import '../Styles/Movie.css';
 import { getMovie } from '../Functions/Fetch';
-import StarOutlineSharpIcon from '@material-ui/icons/StarOutlineSharp';
-
+import Star from '../icons/star.png'
 const IndividualMovie = () => {
-    const { id }: any  = useParams();
+    const { id }  = useParams();
     console.log(id)
 
     const [movie, setMovie] = useState({
@@ -33,7 +32,7 @@ const IndividualMovie = () => {
                 <div className="title2">
                     <h1>{movie.title}</h1>
                     <div className="rating">
-                        <StarOutlineSharpIcon />
+                        <img src={Star} className='starpng' />
                         <p>{movie.vote_average}</p>
                     </div>
                   

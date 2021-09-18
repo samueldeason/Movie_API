@@ -1,20 +1,23 @@
 .card {
-  display: flex;
-  flex-direction: column;
   border-radius: 20px;
-  max-width: 200px;
-  margin: 25px;
+  width: 30vw;
+  margin: 5px;
   border: none;
-  background: none;
-  color: white;
+  background: rgba(134, 134, 134, 0.247);
+  display: flex;
+  color: rgb(2, 2, 2);
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
 }
 
-.card img {
+.moviephoto {
   border-radius: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 200px;
   height: 300px;
   color: black;
-  box-shadow: -4px 4px 10px;
 }
 
 .card h1 {
@@ -27,6 +30,20 @@
   font-weight: bolder;
   font-size: larger;
 }
+.starpng{
+  width: 15px;
+  height: 15px;
+}
+
+.link2{
+  text-decoration: none;
+  color: black;
+}
+.details{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
 .rating p {
   margin-left: 8px;
@@ -36,27 +53,45 @@
 .movies {
   justify-content: center;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+  
   .card{
-    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
   }
-  .card img{
+  .moviephoto{
+    margin-top: auto;
+    margin-bottom: auto;
     width: 100px;
     height: 160px;
   }
-  .card h1 {
-    font-size: 15px;
-  }
-  .rating{
+  .card h1{
     font-size: small;
   }
-  .rating p {
-    margin-left: 8px;
-    margin-top: 3px;
+  .details{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .rating p{
+    font-size: small;
+  }
+  .starpng{
+    width: 15px;
+    height: 15px;
+  }
+  .overview{
+    font-size: smaller;
   }
   
 }

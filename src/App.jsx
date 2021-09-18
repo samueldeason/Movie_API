@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import TopRated from './pages/TopRated';
 import Upcoming from './pages/Upcoming';
 import IndividualMovie from './pages/IndividualMovie';
+import SearchResults from './pages/SearchResults';
 
 function App() {
 
@@ -18,6 +19,9 @@ function App() {
         <Switch>
           <Route exact path="/movie/:id">
            <IndividualMovie />
+          </Route>
+          <Route exact path="/search/:title">
+           <SearchResults />
           </Route>
           <Route exact path="/">
            <Trending />
